@@ -8,7 +8,7 @@ on:
         required: true
         default: 'info'
   push:
-    branches: [ main, m3, 3--use-dapr-managed-state-stores ]
+    branches: [ main, m3 ]
   pull_request:
     branches: [ main, m3 ]
 
