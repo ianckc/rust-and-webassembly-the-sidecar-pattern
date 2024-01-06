@@ -1,10 +1,9 @@
 use std::net::SocketAddr;
 use std::convert::Infallible;
-use std::str;
 use hyper::service::{make_service_fn, service_fn};
 use hyper::{Body, Method, Request, Response, StatusCode, Server};
 use csv::Reader;
-use serde_json::{json, from_slice, Value, Number};
+use serde_json::{from_slice, Value};
 
 /// This is our service handler. It receives a Request, routes on its
 /// path, and returns a Future of a Response.
